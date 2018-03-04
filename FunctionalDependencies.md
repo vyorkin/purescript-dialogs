@@ -1,5 +1,3 @@
-Q:  
-
 **ron wilson**:  
 What exactly does the `|` do in type class definitions?
 I looked here but it doesn't seem to discuss that: https://github.com/purescript/documentation/blob/master/language/Type-Classes.md
@@ -10,8 +8,6 @@ class Newtype t a | t -> a where
   wrap :: a -> t
   unwrap :: t -> a
 ```
-
-A:
 
 **garyb**:  
 Those are functional dependencies. Basically it's a way of describing relationships between type variables in a multi-parameter type class.
@@ -29,3 +25,5 @@ class TC a b where
 ```
 
 However, if you say `class TC a b | a -> b`, it means that there's a single `b` for each `a`, so you will always be able to find the unique `getA`.
+
+***
