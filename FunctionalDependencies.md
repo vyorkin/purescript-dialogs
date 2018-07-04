@@ -27,3 +27,12 @@ class TC a b where
 However, if you say `class TC a b | a -> b`, it means that there's a single `b` for each `a`, so you will always be able to find the unique `getA`.
 
 ***
+
+Some trivial examples of functional dependencies from the [Fun with functional dependencies](http://www.cse.chalmers.se/%7Ehallgren/Papers/hallgren.pdf) paper:
+
+* example 1: http://try.purescript.org/?gist=b93cd253c65bea68e703bf85d214ab49
+* example 2: http://try.purescript.org/?gist=a36a1519a9ca45cb8394282e87b7918c
+* example 3: http://try.purescript.org/?gist=4dd60313ac753c4c9623e1ae5b712b35
+* example 4: http://try.purescript.org/?gist=e9b85b4ba021704321d8fa8fbd351587
+
+***
